@@ -109,3 +109,28 @@ for (let index = 0; index <= n; index++)
         console.log(`Didn't find ${value} within 0 - ${n}`);
     }
 }
+
+
+//Exercise 5 Section *Bonus*
+console.log("EXERCISE 5:\n==========\n");
+
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let end = Math.round(Math.random() * (1000 - 1) + 1); // creates a random number between 1 and 1000
+let start = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 1000
+
+for (let i = start; i <= end; i++)
+{
+ if (i % fizzDivisor == 0 && i % buzzDivisor == 0)
+{ 
+    console.log("FIZZBUZZ");
+}
+else if    (i % buzzDivisor == 0)
+{ 
+    console.log("BUZZ");
+}
+else if    (i % fizzDivisor == 0)
+ { 
+     console.log("FIZZ");
+ }
+}
