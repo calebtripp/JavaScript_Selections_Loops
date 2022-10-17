@@ -89,3 +89,23 @@ else if    (x % 3 == 0)
  else continue;     
 } while (x++ <100);
 
+
+//Exercise 4 Section
+console.log("EXERCISE 4:\n==========\n");
+
+let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
+let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+
+for (let index = 0; index <= n; index++) 
+{
+    
+    if (index == value) 
+    {
+        console.log(`Found ${value}!`);
+        break;
+    }
+    else if (index == n)
+    {
+        console.log(`Didn't find ${value} within 0 - ${n}`);
+    }
+}
